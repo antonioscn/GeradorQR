@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 61%;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(40deg, #2453ff 0%, #43e8ed 100%);
+}
+
+body {
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    background-color: #eee;
+    padding-right: 50px;
+    height: 250px;
+    width: 800px;
+    border-radius: 100px 0px 100px 0px;
+    border: 0px solid;
+    box-shadow: 0 0.8rem 2.5rem rgba(0, 0, 0, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container.active {
+    height: 300px;
+    
+}
+
+.container.active .header h1 {
+    font-size: 2.5rem;
+}
+
+.header-form {
+    padding-left: 50px;
+    margin-right: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:    center;
+}
+
+.container .header h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.container .header p {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.container .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .form input {
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+    height: 40px;
+    margin-bottom: 2rem;
+    border: none;
+    border-bottom: .1rem solid #437eed;
+}
+
+.container .form input::placeholder{
+    padding-left: .5rem;
+    color: black;
+}
+
+.container .form  button {
+    width: 100%;
+    height: 40px;
+    background-color: #437eed;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #eee;
+    cursor: pointer;
+}
+
+.container .form button:hover{
+    border: .1rem solid #437eed;
+    color: #437eed;
+    background-color:   transparent;
+    font-weight: bolder;
+}
+
+.container .qr-code {
+    display: none;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    pointer-events: none;
+    border: 1px solid #ccc;
+}
+
+.container .qr-code img {
+    width: 170px;
+}
+
+.container.active .qr-code{
+    display: block;
+    transition: all 0.7s 0s ease-in-out;
+}
