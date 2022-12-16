@@ -4,7 +4,7 @@
 Repositório criado para compartilhar a criação de um gerador de QR-Codes.
 
 ## ℹ️ Informações
-O gerador transforma um link em um QR-Code que pode ser usado para facilitar os acessos à determinados sites.
+O gerador transforma um link em um QR-Code que pode ser usado para facilitar os acessos à sites utilizando um codigo escaneavel que redireciona o usuário a uma página na web.
  
 Este projeto surgiu para ajudar em meus estudos de JavaScript.
 
